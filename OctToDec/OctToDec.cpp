@@ -8,7 +8,7 @@
 
 int main(int argc, char* args[])
 {
-    const unsigned int nMaxOctDigits = static_cast<unsigned int>(floor(log(UINT32_MAX)/log(8)));
+    const unsigned int nMaxOctDigits = static_cast<unsigned int>(floor(log2(UINT32_MAX)/3));
     const std::regex oRegEx("^[0-7]+$");
     unsigned int nOctPower = 1;
     unsigned int nDecNum = 0;
@@ -28,7 +28,7 @@ int main(int argc, char* args[])
     {
         unsigned int nOctDigit = strLine[nStrLen - 1 - i] - '0';
         nDecNum += (nOctDigit * nOctPower);
-        nOctPower *= 2;
+        nOctPower *= 8;
     }
     std::cout << "The decimal equavalent of the octal number "
               << strLine << " is: " << nDecNum << "\r\n";
