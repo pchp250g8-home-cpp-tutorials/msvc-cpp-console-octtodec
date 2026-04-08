@@ -30,7 +30,7 @@ int main(int argc, char* args[])
         nDecNum += (nOctDigit * nOctPower);
         nOctPower *= 8;
     }
-    std::cout << "The decimal equavalent of the octal number "
+    std::cout << "The decimal equivalent of the octal number "
               << strLine << " is: " << nDecNum << "\r\n";
     std::cin.get();
     return 0;
