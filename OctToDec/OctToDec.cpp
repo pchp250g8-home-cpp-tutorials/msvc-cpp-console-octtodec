@@ -14,7 +14,7 @@ int main(int argc, char* args[])
     unsigned int nDecNum = 0;
     std::string strLine;
     system("cls");
-    std::cout << "Input a binary number\r\n";
+    std::cout << "Input an octal number\r\n";
     std::getline(std::cin, strLine);
     unsigned int nStrLen = static_cast<unsigned int>(strLine.length());
     bool bIsRightString = (nStrLen <= nMaxOctDigits) && (std::regex_match(strLine, oRegEx));
