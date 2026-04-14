@@ -8,10 +8,10 @@
 
 int main(int argc, char* args[])
 {
-    const unsigned int nMaxOctDigits = static_cast<unsigned int>(ceil(log2(UINT32_MAX)/3));
+    const unsigned int nMaxOctDigits = static_cast<unsigned int>(ceil(log2(UINT32_MAX) / 3));
     const std::regex oRegEx("^[0-7]+$");
-    unsigned int nOctPower = 1;
-    unsigned int nDecNum = 0;
+    long long nOctPower = 1L;
+    long long nDecNum = 0L;
     std::string strLine;
     system("cls");
     std::cout << "Input an octal number\r\n";
