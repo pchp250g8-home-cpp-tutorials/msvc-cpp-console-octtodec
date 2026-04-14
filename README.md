@@ -1,5 +1,5 @@
 OctToDec. C++ Tutorials. Microsoft Visual Studio IDE. Simple Input/Output. Algorithms. Strings. Windows Platform. Console Application.
-A console application in the C++ programming language. 
+A console application in the C++ programming language.
 The program does the following:
   1. Asks the user to enter a string.
   2. Checks whether the entered string is valid. It must be less than 12 characters long and contain only the numbers between 0 and 7.
